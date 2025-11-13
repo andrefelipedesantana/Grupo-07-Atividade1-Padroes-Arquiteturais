@@ -28,11 +28,13 @@ Ele recebe uma tarefa, a divide em subtarefas e as encaminha para outras **LLMs 
 
 ---
 
+
 ## 🗂️ Estrutura deste Repositório
 
-Este repositório está organizado em pastas correspondentes aos **tipos de dados analisados** (Readme, Código-Fonte e Estrutura).  
+Este repositório está organizado em pastas correspondentes aos **tipos de dados analisados** (Readme, Código-Fonte e Estrutura).
 Dentro de cada pasta, há subpastas para cada aluno responsável, contendo seus artefatos de análise (códigos-fonte, prompts, notebooks, etc.).
 
+```text
 📦 Engenharia_SoftwareII_2025-2_T04_JARVIS
 │
 ├── 📂 Análise da Estrutura do Projeto/
@@ -50,6 +52,7 @@ Dentro de cada pasta, há subpastas para cada aluno responsável, contendo seus 
 │   └── 📂 Felipe Ferreira - 2021.../
 │
 └── 📄 README.md ← (Este arquivo)
+```
 
 
 ---
