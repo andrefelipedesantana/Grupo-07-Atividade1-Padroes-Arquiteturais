@@ -1,0 +1,22 @@
+// Tutorial para testar os modelos localmente  
+// 1° Tenha em mãos os 2 arquivos python desse diretório 
+// 2° Crie um ambiente virtual 
+
+Windows:
+python -m venv venv
+venv\Scripts\activate
+
+Linux/Mac:
+python3 -m venv venv
+source venv/bin/activate
+
+// 3° Instale as dependências do projeto
+
+pip install -r requirements.txt
+
+// 4° Execução de código 
+
+python diretorios.py caminho/do/projeto
+
+python dependencias.py caminho/do/projeto
+
