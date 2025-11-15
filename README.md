@@ -86,7 +86,7 @@ Algumas análises (ex.: Rafael e Vinícius) utilizaram a interface de widget dis
 
 1. Acesse o link do modelo de IA (ex.: `meta-llama/Llama-3.1-8B-Instruct`).  
 2. Na interface **Inference**, cole o prompt e os dados de entrada (como os arquivos `.txt`).  
-3. Os tutoriais detalhados e os prompts utilizados estão nas pastas dos respectivos alunos.
+3. Os tutoriais detalhados e os prompts utilizados estão nas pastas dos respectivos alunos e, também, no link do tutorial escrito que está disponpivel ao final do Readme.
 
 ---
 
