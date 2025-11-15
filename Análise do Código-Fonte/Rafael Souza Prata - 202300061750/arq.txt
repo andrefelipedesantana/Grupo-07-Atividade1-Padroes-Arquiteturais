@@ -1,0 +1,67 @@
+// Tutorial de Identificação da Arquitetura do Projeto JARVIS
+
+// 1° Etapa: Clonagem do repositório do JARVIS
+// Utilizando o Visual Studio Code (VSC) com suporte ao Git, foi executado:
+
+## git clone https://github.com/microsoft/JARVIS.git
+
+// Esse comando realiza a cópia completa do repositório JARVIS,
+// disponibilizado publicamente no GitHub.
+
+// ---------------------------------------------------------------
+
+// 2° Etapa: Análise manual da estrutura organizacional do repositório
+// Durante a análise, foi identificado que o projeto segue um sistema baseado
+// em microserviços, composto pelos seguintes módulos:
+
+// • HuggingGPT — MONOREPO
+//   Contém um front-end em Vue.js e um back-end em Python.
+//   Responsável pela comunicação com modelos de IA e pela interface de interação.
+
+// • TaskBench
+//   Conjunto de arquivos em Python e JSON voltados à avaliação de desempenho
+//   de LLMs em automação de tarefas, utilizando Tool Graphs para decomposição
+//   e execução de fluxos de tarefas.
+
+// • EasyTool
+//   Módulo em Python que auxilia na geração e gerenciamento de ferramentas (tools)
+//   utilizadas pelos outros serviços.
+//   Atua como repositório e orquestrador de utilidades.
+
+// ---------------------------------------------------------------
+
+// 3° Etapa: Geração do arquivo de estrutura do projeto
+// No terminal do Visual Studio Code, foi utilizado:
+
+## find . > struct.txt
+
+// Esse comando gera o arquivo struct.txt contendo toda a estrutura
+// de diretórios e arquivos do repositório.
+// Ele foi utilizado como base para a análise automatizada da arquitetura.
+
+// ---------------------------------------------------------------
+
+// 4° Etapa: Identificação da arquitetura utilizando Hugging Face
+// A análise automatizada foi realizada pela interface web do Hugging Face,
+// pela praticidade e acessibilidade.
+
+// Modelo selecionado: Meta-Llama-3.1-8B-Instruct
+// IA treinada para raciocínio, compreensão e análise textual,
+// incluindo interpretação de estruturas de software.
+
+// Link do modelo:
+// https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+
+// Prompt enviado ao modelo:
+"""
+Você é um especialista em arquitetura de software.
+Abaixo está a estrutura de diretórios de um repositório GitHub (retirada de um arquivo estrutura.txt).
+Analise e descreva a arquitetura do projeto, explicando:
+• Quais são os principais componentes e suas funções
+• Como eles se relacionam entre si
+• Quais tecnologias, linguagens e frameworks estão sendo utilizados
+• Que tipo de arquitetura o sistema representa (ex: client-server, modular, monorepo etc.)
+• Onde ocorre o acesso a dados (existe algum banco de dados?)
+• Qual a finalidade dos arquivos .json presentes em cada módulo
+Estrutura do projeto em anexo.
+"""
