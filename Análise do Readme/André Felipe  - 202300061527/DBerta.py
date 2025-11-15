@@ -1,5 +1,5 @@
 # ============================================================
-# Análise de Padrões Arquiteturais com modelo mDeBERTa
+# Análise de Padrões Arquiteturais com modelo mDeBERTa via Google Collab
 # ============================================================
 
 # 📦 1. Instale a biblioteca (roda apenas uma vez no terminal):
