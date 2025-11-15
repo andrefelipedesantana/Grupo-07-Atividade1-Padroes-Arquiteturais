@@ -67,7 +67,7 @@ Dentro de cada pasta, há subpastas para cada aluno responsável, contendo seus 
 │   ├── 📂 André Felipe - 2023.../
 │   └── 📂 Felipe Ferreira - 2021.../
 │
-└── 📄 README.md ← (Este arquivo)
+└── 📄 README.md 
 ```
 
 # 🛠️ Reprodutibilidade e Ambiente de Execução
