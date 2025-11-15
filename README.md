@@ -1,6 +1,6 @@
 # 🧠 Atividade 1 – Padrões Arquiteturais de Software (Engenharia de Software II)
 
-Este repositório contém todos os artefatos (notebooks, prompts, etc.) utilizados na **Atividade 01** da disciplina de **Engenharia de Software II**.
+Este repositório contém todos os artefatos (códigos, prompts, scripts, resultados, imagens etc.) utilizados na **Atividade 01** da disciplina de **Engenharia de Software II**.
 
 O objetivo foi **analisar os padrões arquiteturais** de um projeto de software, o **microsoft/JARVIS (HuggingGPT)**.
 
@@ -52,7 +52,8 @@ Dentro de cada pasta, há subpastas para cada aluno responsável, contendo seus 
 │
 └── 📄 README.md ← (Este arquivo)
 ```
-## 🛠️ Reprodutibilidade e Ambiente de Execução
+
+# 🛠️ Reprodutibilidade e Ambiente de Execução
 
 Esta seção descreve a infraestrutura utilizada e as instruções necessárias para replicar as análises de IA.
 
@@ -60,15 +61,36 @@ Esta seção descreve a infraestrutura utilizada e as instruções necessárias 
 
 ## 🔧 Infraestrutura (Ambiente de Execução)
 
-Todas as análises de Inteligência Artificial que exigiram execução de código e foram realizadas em ambiente de nuvem, utilizando **Google Colab** (serviço gratuito).
+As análises foram realizadas em **dois tipos de ambiente**: nuvem (para a maioria dos modelos) e local (para o `codebert-base`).
 
-**Especificações do ambiente utilizado:**
+---
 
-- **Serviço:** Google Colab (GPU de back-end do Google Compute Engine)  
-- **GPU:** 15.0 GB (RAM da GPU)  
+## ☁️ Ambiente de Nuvem — Google Colab
+
+A maior parte das análises foi executada no **Google Colab** (serviço gratuito).
+
+**Especificações:**
+
+- **Serviço:** Google Colab (back-end Google Compute Engine)  
+- **GPU:** 15.0 GB de memória  
 - **RAM do Sistema:** 12.7 GB  
-- **Disco:** 112.6 GB  
+- **Disco:** 112.6 GB disponíveis  
 
+---
+
+## 💻 Ambiente Local — VS Code
+
+A análise vetorial com **codebert-base** foi executada localmente.
+
+**Requisitos Mínimos:**
+
+- **Hardware:**  
+  - CPU (funciona, porém lento)  
+  - GPU com **4 GB+ de VRAM** (recomendado)  
+- **RAM do Sistema:** 16 GB recomendados  
+- **Software:**  
+  - VS Code com extensão Python  
+  - Python **3.8+**
 
 ---
 
@@ -110,6 +132,51 @@ O código já inclui:
 
 ---
 
+## 3. 🖥️ Análise via Execução Local (VS Code)
+
+A análise com **codebert-base** (David, Adailton, João Felipe) foi executada localmente.
+
+### ✔️ Como executar:
+
+### 🔹 Pré-requisitos
+
+Tenha os arquivos:
+
+- `diretorios.py`
+- `dependencias.py`
+- `requirements.txt`
+
+(localizados na pasta `Análise da Estrutura do Projeto/`)
+
+E um **clone do projeto JARVIS** na sua máquina.
+
+---
+
+### 🔹 Crie um Ambiente Virtual
+
+```bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 🔹 Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 🔹 Execute a análise
+Passe o caminho do seu clone local do JARVIS como argumento para os scripts.
+
+```bash
+python diretorios.py "C:\caminho\para\o\projeto\JARVIS"
+python dependencias.py "C:\caminho\para\o\projeto\JARVIS"
+```
 
 ---
 
