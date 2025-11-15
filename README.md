@@ -52,6 +52,63 @@ Dentro de cada pasta, há subpastas para cada aluno responsável, contendo seus 
 │
 └── 📄 README.md ← (Este arquivo)
 ```
+## 🛠️ Reprodutibilidade e Ambiente de Execução
+
+Esta seção descreve a infraestrutura utilizada e as instruções necessárias para replicar as análises de IA.
+
+---
+
+## 🔧 Infraestrutura (Ambiente de Execução)
+
+Todas as análises de Inteligência Artificial que exigiram execução de código foram realizadas em ambiente de nuvem, utilizando **Google Colab** (serviço gratuito).
+
+**Especificações do ambiente utilizado:**
+
+- **Serviço:** Google Colab (GPU de back-end do Google Compute Engine)  
+- **GPU:** 15.0 GB (RAM da GPU)  
+- **RAM do Sistema:** 12.7 GB  
+- **Disco:** 112.6 GB  
+
+
+---
+
+## 📌 Instruções para Execução (Como Replicar)
+
+A replicação das análises pode ser feita de duas maneiras, dependendo da abordagem utilizada pelo membro da equipe.
+
+---
+
+### 1. 🟦 Análise via Interface Web (Hugging Face)
+
+Algumas análises (ex.: Rafael e Vinícius) utilizaram a interface de widget disponível na própria página do modelo no Hugging Face.
+
+**Como executar:**
+
+1. Acesse o link do modelo de IA (ex.: `meta-llama/Llama-3.1-8B-Instruct`).  
+2. Na interface **Inference**, cole o prompt e os dados de entrada (como os arquivos `.txt`).  
+3. Os tutoriais detalhados e os prompts utilizados estão nas pastas dos respectivos alunos.
+
+---
+
+### 2. 🟩 Análise via Código (Google Colab)
+
+Outras análises (ex.: André, Felipe e Enzo) utilizaram código Python para executar os modelos.
+
+**Como executar:**
+
+1. Acesse a pasta do aluno neste repositório  
+   (ex.: `/Análise do Readme/André Felipe - 2023.../`).  
+2. Localize o script (`.py`) da análise e copie-o.  
+3. Abra o arquivo no **Google Colab**.
+4. Adicione um novo bloco de código e cole o script copiado.
+5. Clique em **"Executar tudo"** (`Runtime > Run all`).  
+
+O código já inclui:
+- instalação de dependências (como *transformers*),  
+- carregamento do modelo,  
+- execução completa da análise.
+
+---
 
 
 ---
@@ -61,8 +118,8 @@ Dentro de cada pasta, há subpastas para cada aluno responsável, contendo seus 
 O material escrito e audiovisual contendo os tutoriais da elaboração e execução das atividades de forma detalhada para cada membro está disponível nos links a seguir:
 
 - 📄 **Tutorial Escrito (Relatório Completo):** [Acesse aqui](https://docs.google.com/document/d/1LzsOySSWbhy81r3u3X7ldHWZYF_D6ev-isXvMyRwxqQ/edit?usp=sharing)
-- 🎥 **Tutorial Gravado (Vídeo):** [Acesse aqui]
- (https://drive.google.com/file/d/1nwgLRhP7H86so4XC7LhvmYyNlCcLmOYX/view?usp=drive_link)
+- 🎥 **Tutorial Gravado (Vídeo):** [Acesse aqui](https://drive.google.com/file/d/1nwgLRhP7H86so4XC7LhvmYyNlCcLmOYX/view?usp=drive_link)
+
 
 ---
 
